@@ -5,9 +5,6 @@
   <meta charset="utf-8">
 
   <title>Experiment-repo</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
-
   <link rel="stylesheet" href="styles.css">
 
 </head>
@@ -15,7 +12,33 @@
 <body>
 <a href="profile.html">profile.html</a>
 <h1>Welcome</h1>
-<p>Welcome to the website.</p>
+<p>Welcome to the website. The only thing that exists right now is a todo-function that was found on the internet. The todo uses javascripts localStorage function, which stores the todos in a similar way as cookies work.n</p>
+<p>Feel free to add whatever you want!</p>
+<!--//Todo
+//https://code-boxx.com/simple-javascript-to-do-list/-->
+
+
+    <div id="todo-wrap">
+      <!-- (A) HEADER -->
+      <h1>TO DO LIST</h1>
+      
+      <!-- (B) ADD NEW ITEM -->
+      <form id="todo-add">
+        <input type="text" id="todo-item" placeholder="New Item" required/>
+        <input type="submit" id="todo-save" value="&#10010;"/>
+      </form>
+      
+      <!-- (C) DELETE ITEMS -->
+      <div id="todo-del">
+        <input type="button" value="Delete All" id="todo-delall"/>
+        <input type="button" value="Delete Completed" id="todo-delcom"/>
+      </div>
+      
+      <!-- (D) LIST ITEMS -->
+      <div id="todo-list"></div>
+    </div>
+
   <script src="scripts.js"></script>
+    <script src="todo_javascript/todo.js"></script>
 </body>
 </html>
